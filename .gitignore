@@ -1,0 +1,9 @@
+.DS_Store
+__pycache__/
+
+# WARNING:
+# .env files should always be ignored. This is an exceptional exception 
+# because the database server only exists in the production environment
+# and is only accessible from within the Codespace.
+# DO NOT PUSH THIS PROJECT TO PRODUCTION.
+# .env 
