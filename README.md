@@ -1,30 +1,22 @@
 # Learning REST APIs
 
-This is the repository for the LinkedIn Learning course `Learning REST APIs`. The full course is available from [LinkedIn Learning][lil-course-url].
-
-![course-name-alt-text][lil-thumbnail-url]
+This is my personal practice repository based on the LinkedIn Learning course [Learning REST APIs](https://www.linkedin.com/learning/learning-rest-apis). It is not a fork of the original course repository; it was initialized from scratch with its own commit history.
 
 ## Course Description
 
-Learn the basics of REST APIs. In this course, discover what REST APIs are, why they matter, and how putting them to use can help you build faster, more efficient applications. Review how HTTP and REST APIs relate, explore the six constraints of REST, and learn about HTTP status messages. Learn how to get started with consuming REST APIs to incorporate them into data-driven applications.
+Learn the basics of REST APIs. This course covers what REST APIs are, why they matter, and how using them helps build faster, more efficient applications. It reviews how HTTP and REST APIs relate, explores the six constraints of REST, and covers HTTP status messages, along with how to consume REST APIs in data-driven applications.
 
 ## Instructions
 
-This repository serves as a practice environment for interacting with a database server through a REST API. When you open the repository in GitHub Codespaces, it spins up and populates a private database server with dummy content you can use to practice creating, retrieving, updating, modifying, and deleteting data through a typical REST API.
+This repository serves as a practice environment for interacting with a database server through a REST API. When opened in GitHub Codespaces, it spins up and populates a private database server with dummy content for practicing create, retrieve, update, and delete operations through a typical REST API.
 
-> [!NOTE]
-> The Codespace takes quite a while to boot up for the first time. You'll know when it's ready when you get a message similar to this in Terminal:
+The Codespace can take a while to boot up on first run. It's ready when the terminal shows something like:
 
-```bash
+```
 INFO:     Started server process [5183]
 INFO:     Waiting for application startup.
 INFO:     Application startup complete.
 ```
-
-> [!CAUTION]
-> This repo contains a live `.env` file and `.gitignore` does not ignore this file. In normal circumstances this would be a security issue and __strongly__ discouraged. This repo is an exceptional exception because the database server the `.env` file provides access to only exists in the virtual Codespaces environment. If you are not comfortable with having a live `.env` file in your fork, add `.env` to `.gitignore` and use the `.env.devcontainer` file as your template.
-__DO NOT PUSH THIS REPO AS-IS TO PRODUCTION!__
-
 
 ## Branches
 
@@ -32,21 +24,21 @@ This repository has only one branch: `main`.
 
 ## Installing
 
-The setup of this respository is automated in GitHub Codespaces. The only configuration you need to make on your own is making the REST API available to VS Code. This requires changing the REST API port from Private to Public:
+Setup is automated in GitHub Codespaces. The only manual step is making the REST API port public:
 
 1. Select the Ports tab in the bottom panel
-2. Find the row for the `8000` port
+2. Find the row for port `8000`
 3. In the "Visibility" column, right-click on "Private"
-4. In the pop-up menu, select "Port Visibility -> Public"
+4. Select "Port Visibility -> Public"
 
-## Expanding the database
+## Expanding the Database
 
-The database is auto-populated with the contents of `init_db.py`. If you want to start with a larger dataset, you can modify and expand the contents of this file to your liking in your own fork and start a new Codespace.
+The database is auto-populated from the contents of `init_db.py`. To start with a larger dataset, modify and expand this file and start a new Codespace.
 
-## REST API documentation
+## REST API Documentation
 
-Use of the REST API is covered in the course. You'll also find comprehensive documentation of the REST API in `DOCUMENTATION.md`.
+Full documentation of the REST API is available in `DOCUMENTATION.md`.
 
-[0]: # "Replace these placeholder URLs with actual course URLs"
-[lil-course-url]: https://www.linkedin.com/learning/learning-rest-apis
-[lil-thumbnail-url]: https://cdn.lynda.com/course/651230/651230-1564006888040-16x9.jpg
+## Notes
+
+This repository does not include a live `.env` file. Environment variables should be configured locally using `.env.devcontainer` as a template.
