@@ -7,3 +7,4 @@ __pycache__/
 # and is only accessible from within the Codespace.
 # DO NOT PUSH THIS PROJECT TO PRODUCTION.
 # .env 
+.env
